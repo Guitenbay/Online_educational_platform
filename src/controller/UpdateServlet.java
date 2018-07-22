@@ -28,7 +28,6 @@ public class UpdateServlet extends HttpServlet {
 
         if (!password.equals("") && !id.equals("")) {
             User tmp = userDao.getUserById(Integer.parseInt(id));
-            System.out.println(tmp.getUsername() + " " + tmp.getPassword());
             tmp.setPassword(password);
             userDao.update(tmp);
         }
