@@ -5,15 +5,15 @@ public class Course {
     private int id;
     private String name;
     private String description;
-    private int creator_id;
+    private int creatorId;
 
     public Course(){}
 
-    public Course(int id, String name, String description, int creator_id) {
+    public Course(int id, String name, String description, int creatorId) {
         this.id = id;
         this.name = name;
         this.description = description;
-        this.creator_id = creator_id;
+        this.creatorId = creatorId;
     }
 
     public int getId() {
@@ -40,11 +40,11 @@ public class Course {
         this.description = description;
     }
 
-    public int getCreator_id() {
-        return creator_id;
+    public int getCreatorId() {
+        return creatorId;
     }
 
-    public void setCreator_id(int creator_id) {
-        this.creator_id = creator_id;
+    public void setCreatorId(int creatorId) {
+        this.creatorId = creatorId;
     }
 }
