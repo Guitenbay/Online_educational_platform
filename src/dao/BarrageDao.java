@@ -6,9 +6,9 @@ import java.util.List;
 
 public interface BarrageDao {
 
-    List<Barrage> getBarrageListByValuePath(String valuePath);
+    List<Barrage> getBarrageListByValuePath(String videoPath);
 
-    void save(Barrage barrage);
+    void save(Barrage barrage, String videoPath);
 
     void deleteBarrageById(int id);
 

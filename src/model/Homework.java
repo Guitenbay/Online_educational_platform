@@ -1,18 +1,22 @@
 package model;
 
+import java.util.Date;
+
 public class Homework {
 
     private int id;
     private String name;
     private String description;
+    private Date deadLine;
     private int courseId;
 
     public Homework(){}
 
-    public Homework(int id, String name, String description, int courseId) {
+    public Homework(int id, String name, String description, Date deadLine, int courseId) {
         this.id = id;
         this.name = name;
         this.description = description;
+        this.deadLine = deadLine;
         this.courseId = courseId;
     }
 
@@ -38,6 +42,14 @@ public class Homework {
 
     public void setDescription(String description) {
         this.description = description;
+    }
+
+    public Date getDeadLine() {
+        return deadLine;
+    }
+
+    public void setDeadLine(Date deadLine) {
+        this.deadLine = deadLine;
     }
 
     public int getCourseId() {
