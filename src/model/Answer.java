@@ -1,19 +1,23 @@
 package model;
 
+import java.util.Date;
+
 public class Answer {
 
     private int id;
     private String Context;
     private int score;
+    private Date updateTime;
     private int userId;
     private int homeworkId;
 
     public Answer(){}
 
-    public Answer(int id, String context, int score, int userId, int homeworkId) {
+    public Answer(int id, String context, int score, Date updateTime, int userId, int homeworkId) {
         this.id = id;
         Context = context;
         this.score = score;
+        this.updateTime = updateTime;
         this.userId = userId;
         this.homeworkId = homeworkId;
     }
@@ -40,6 +44,14 @@ public class Answer {
 
     public void setScore(int score) {
         this.score = score;
+    }
+
+    public Date getUpdateTime() {
+        return updateTime;
+    }
+
+    public void setUpdateTime(Date updateTime) {
+        this.updateTime = updateTime;
     }
 
     public int getUserId() {
