@@ -6,21 +6,23 @@ import model.*;
 
 import java.util.Date;
 import java.util.List;
+import java.util.Map;
 
 public class Main {
 
     public static void main(String[] args) {
-        HomeworkDao homeworkDao = new HomeworkDaoImpl();
+//        CourseDao courseDao = new CourseDaoImpl();
+        SelectedDao selectedDao = new SelectedDaoImpl();
+//        List<Course> courses = courseDao.getCourseAllByDesc();
 
-//        answerDao.update(new Answer(3, "context-1", 0, new Date(), 1, 1));
-
-//        homeworkDao.update(new Homework(6, "home-1", "", new Date(), 1));
-//        List<Homework> homeworks = homeworkDao.getHomeworkListByCourseId(1);
-//
-//        for (Homework answer: homeworks){
-//            System.out.println(answer.getName()+ " " + answer.getDeadLine());
+//        for (Course course: courses){
+//            System.out.println(course.getId() + " " + course.getName());
 //        }
-        homeworkDao.deleteHomeworkById(6);
+        List<Map<String, Object>> list = selectedDao.getSelectedListByUserId(1);
+        for (Map<String, Object> map:list){
+            System.out.println(map.get("userId") + " " + map.get("courseId"));
+        }
+//        System.out.println(selectedDao.getUserNumberByCourse(2));
 
     }
 

@@ -6,6 +6,8 @@ import java.util.List;
 
 public interface CourseDao {
 
+    List<Course> getCourseAllByDesc();
+
     List<Course> getCourseListByUserId(int userId);
 
     Course getCourseById(int id);

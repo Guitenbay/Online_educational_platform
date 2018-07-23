@@ -8,6 +8,13 @@ import java.util.List;
 
 public class CourseDaoImpl extends Dao<Course> implements CourseDao {
     @Override
+    public List<Course> getCourseAllByDesc() {
+        String sql = "SELECT id, name, description, creator_id creatorId " +
+                "FROM courses ORDER BY id DESC";
+        return getForList(sql);
+    }
+
+    @Override
     public List<Course> getCourseListByUserId(int userId) {
         String sql = "SELECT id, name, description, creator_id creatorId " +
                 "FROM courses WHERE creator_id=?";
