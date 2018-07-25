@@ -15,11 +15,6 @@ import java.util.Date;
 @WebServlet(name = "RegisterServlet", urlPatterns = "/register")
 public class RegisterServlet extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-
-    }
-
-    protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-
         String username = request.getParameter("username");
         String password = request.getParameter("password");
 
@@ -41,6 +36,10 @@ public class RegisterServlet extends HttpServlet {
             request.setAttribute("message", "username or password is null");
         }
 
-        request.getRequestDispatcher("/register.jsp").forward(request, response);
+    }
+
+    protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+        doPost(request, response);
+
     }
 }
