@@ -7,52 +7,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8e40960a-c156-42af-a9a7-24888ffb999e" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/controller/AccountServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/controller/GetCourseServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/controller/SearchServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/WEB-INF/view/course.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/WEB-INF/view/footer.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/WEB-INF/view/header.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/WEB-INF/view/login.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/WEB-INF/view/register.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/WEB-INF/view/search.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/css/account.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/css/course.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/css/footer.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/css/header.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/css/index.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/css/main.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/css/search.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/imgs/account-bg.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/imgs/first-slide.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/imgs/search.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/imgs/second-slide.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/imgs/test.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/imgs/third-slide.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/js/register.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Online_educational_platform_war_exploded/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Online_educational_platform_war_exploded/WEB-INF/web.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Online_educational_platform_war_exploded/css/login.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Online_educational_platform_war_exploded/css/register.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Online_educational_platform_war_exploded/footer.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Online_educational_platform_war_exploded/header.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Online_educational_platform_war_exploded/index.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Online_educational_platform_war_exploded/js/register.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Online_educational_platform_war_exploded/register.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/controller/DeleteServlet.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/controller/GetServlet.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/controller/LoginServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/LoginServlet.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/controller/RegisterServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/RegisterServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/controller/UpdateServlet.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/web.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/css/login.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/css/register.css" beforeDir="false" afterPath="$PROJECT_DIR$/web/css/login-register.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/footer.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/view/account.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/header.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/view/index.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/js/login.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/js/register.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/register.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WEB-INF/view/register.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/view/register.jsp" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -67,8 +25,22 @@
       <file leaf-file-name="register.jsp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/WEB-INF/view/register.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="297">
-              <caret line="55" selection-start-line="55" selection-end-line="55" selection-end-column="65" />
+            <state relative-caret-position="299">
+              <caret line="34" column="54" lean-forward="true" selection-start-line="34" selection-start-column="54" selection-end-line="34" selection-end-column="54" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="register.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/js/register.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="130">
+              <caret line="5" column="51" selection-start-line="5" selection-start-column="51" selection-end-line="5" selection-end-column="51" />
+              <folding>
+                <element signature="e#166#173#1" expanded="true" />
+                <element signature="e#222#229#1" expanded="true" />
+                <element signature="e#222#229#1" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -76,8 +48,8 @@
       <file leaf-file-name="search.jsp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/WEB-INF/view/search.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="167">
-              <caret line="15" column="73" lean-forward="true" selection-start-line="11" selection-start-column="4" selection-end-line="15" selection-end-column="73" />
+            <state relative-caret-position="26">
+              <caret line="15" column="73" selection-start-line="11" selection-start-column="4" selection-end-line="15" selection-end-column="73" />
             </state>
           </provider>
         </entry>
@@ -85,12 +57,8 @@
       <file leaf-file-name="index.jsp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/WEB-INF/view/index.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="297">
+            <state relative-caret-position="2574">
               <caret line="99" column="65" selection-start-line="99" selection-start-column="65" selection-end-line="99" selection-end-column="65" />
-              <folding>
-                <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -98,17 +66,8 @@
       <file leaf-file-name="login.jsp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/WEB-INF/view/login.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="349">
+            <state relative-caret-position="1378">
               <caret line="53" column="191" selection-start-line="53" selection-start-column="191" selection-end-line="53" selection-end-column="191" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="footer.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/WEB-INF/view/footer.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="234">
-              <caret line="9" column="27" lean-forward="true" selection-start-line="9" selection-start-column="27" selection-end-line="9" selection-end-column="27" />
             </state>
           </provider>
         </entry>
@@ -116,17 +75,17 @@
       <file leaf-file-name="account.jsp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/WEB-INF/view/account.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="494">
-              <caret line="21" column="44" lean-forward="true" selection-start-line="21" selection-start-column="44" selection-end-line="21" selection-end-column="44" />
+            <state relative-caret-position="546">
+              <caret line="21" column="44" selection-start-line="21" selection-start-column="44" selection-end-line="21" selection-end-column="44" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="header.jsp" pinned="false" current-in-tab="false">
+      <file leaf-file-name="header.jsp" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/web/WEB-INF/view/header.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-171">
-              <caret line="24" column="33" lean-forward="true" selection-start-line="24" selection-start-column="33" selection-end-line="24" selection-end-column="33" />
+            <state relative-caret-position="127">
+              <caret line="18" column="88" selection-start-line="18" selection-start-column="75" selection-end-line="18" selection-end-column="88" />
             </state>
           </provider>
         </entry>
@@ -134,17 +93,17 @@
       <file leaf-file-name="course.jsp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/WEB-INF/view/course.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="387">
-              <caret line="22" column="30" lean-forward="true" selection-start-line="22" selection-start-column="30" selection-end-line="22" selection-end-column="30" />
+            <state relative-caret-position="572">
+              <caret line="22" column="30" selection-start-line="22" selection-start-column="30" selection-end-line="22" selection-end-column="30" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="LoginServlet.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="LoginServlet.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/controller/LoginServlet.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="297">
-              <caret line="36" column="23" lean-forward="true" selection-start-line="36" selection-start-column="23" selection-end-line="36" selection-end-column="23" />
+            <state relative-caret-position="208">
+              <caret line="18" column="117" selection-start-line="18" selection-start-column="117" selection-end-line="18" selection-end-column="117" />
             </state>
           </provider>
         </entry>
@@ -152,8 +111,8 @@
       <file leaf-file-name="RegisterServlet.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/controller/RegisterServlet.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="338">
-              <caret line="38" column="13" lean-forward="true" selection-start-line="33" selection-start-column="19" selection-end-line="38" selection-end-column="13" />
+            <state relative-caret-position="287">
+              <caret line="37" column="23" lean-forward="true" selection-start-line="37" selection-start-column="23" selection-end-line="37" selection-end-column="23" />
             </state>
           </provider>
         </entry>
@@ -167,6 +126,7 @@
         <option value="Class" />
         <option value="CSS File" />
         <option value="Jsp File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -203,7 +163,6 @@
         <option value="$PROJECT_DIR$/src/dao/impl/SelectedDaoImpl.java" />
         <option value="$PROJECT_DIR$/src/Main.java" />
         <option value="$PROJECT_DIR$/src/util/FileUploadUtil.java" />
-        <option value="$PROJECT_DIR$/web/js/register.js" />
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/web/css/main.css" />
         <option value="$PROJECT_DIR$/web/footer.jsp" />
@@ -224,14 +183,15 @@
         <option value="$PROJECT_DIR$/web/css/index.css" />
         <option value="$PROJECT_DIR$/web/css/course.css" />
         <option value="$PROJECT_DIR$/src/controller/GetCourseServlet.java" />
-        <option value="$PROJECT_DIR$/web/WEB-INF/view/register.jsp" />
         <option value="$PROJECT_DIR$/web/WEB-INF/view/index.jsp" />
         <option value="$PROJECT_DIR$/web/WEB-INF/view/account.jsp" />
         <option value="$PROJECT_DIR$/web/WEB-INF/view/login.jsp" />
         <option value="$PROJECT_DIR$/web/WEB-INF/view/search.jsp" />
         <option value="$PROJECT_DIR$/web/WEB-INF/view/course.jsp" />
-        <option value="$PROJECT_DIR$/src/controller/RegisterServlet.java" />
         <option value="$PROJECT_DIR$/src/controller/LoginServlet.java" />
+        <option value="$PROJECT_DIR$/src/controller/RegisterServlet.java" />
+        <option value="$PROJECT_DIR$/web/WEB-INF/view/register.jsp" />
+        <option value="$PROJECT_DIR$/web/js/register.js" />
       </list>
     </option>
   </component>
@@ -252,8 +212,7 @@
     <packageJsonPaths />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="203" />
-    <option name="y" value="80" />
+    <option name="x" value="198" />
     <option name="width" value="1639" />
     <option name="height" value="1100" />
   </component>
@@ -262,9 +221,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="AndroidView" />
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -282,18 +238,6 @@
               <item name="Online_educational_platform" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="controller" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Online_educational_platform" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Online_educational_platform" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="dao" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Online_educational_platform" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Online_educational_platform" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="util" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Online_educational_platform" type="b2602c69:ProjectViewProjectNode" />
@@ -317,23 +261,15 @@
               <item name="Online_educational_platform" type="462c0819:PsiDirectoryNode" />
               <item name="web" type="462c0819:PsiDirectoryNode" />
               <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
-              <item name="lib" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Online_educational_platform" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Online_educational_platform" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
               <item name="view" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Online_educational_platform" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
+      <pane id="AndroidView" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -343,7 +279,7 @@
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="project.structure.last.edited" value="Artifacts" />
+    <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
   </component>
@@ -522,15 +458,16 @@
       <workItem from="1532496026735" duration="6448000" />
       <workItem from="1532507771332" duration="438000" />
       <workItem from="1532527394429" duration="10467000" />
-      <workItem from="1532576555673" duration="14856000" />
+      <workItem from="1532576555673" duration="15964000" />
+      <workItem from="1532614975386" duration="6886000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="59977000" />
+    <option name="totallyTimeSpent" value="67971000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="203" y="80" width="1639" height="1100" extended-state="0" />
+    <frame x="198" y="0" width="1639" height="1100" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
@@ -552,10 +489,10 @@
       <window_info anchor="bottom" id="Java Enterprise" order="13" />
       <window_info anchor="right" id="Capture Analysis" order="4" />
       <window_info anchor="bottom" id="Version Control" order="12" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49804688" visible="true" weight="0.36836627" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49804688" visible="true" weight="0.36836627" />
       <window_info anchor="bottom" id="Terminal" order="8" />
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.7479407" visible="true" weight="0.20709309" />
-      <window_info id="Web" order="6" sideWeight="0.2520593" side_tool="true" visible="true" weight="0.20709309" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.74629325" visible="true" weight="0.20962635" />
+      <window_info id="Web" order="6" sideWeight="0.25370675" side_tool="true" visible="true" weight="0.20962635" />
       <window_info anchor="right" id="Theme Preview" order="7" />
       <window_info id="Favorites" order="5" side_tool="true" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -578,6 +515,27 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/view/course.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="572">
+          <caret line="22" column="30" lean-forward="true" selection-start-line="22" selection-start-column="30" selection-end-line="22" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/controller/RegisterServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="728">
+          <caret line="38" column="13" lean-forward="true" selection-start-line="33" selection-start-column="19" selection-end-line="38" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/controller/LoginServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="676">
+          <caret line="36" column="23" lean-forward="true" selection-start-line="36" selection-start-column="23" selection-end-line="36" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/dao/impl/CommentDaoImpl.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="573">
@@ -700,13 +658,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/controller/UpdateServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="520">
-          <caret line="29" column="65" selection-start-line="29" selection-start-column="65" selection-end-line="29" selection-end-column="65" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/controller/UpdateServlet.java" />
     <entry file="file://$PROJECT_DIR$/src/util/FileUploadUtil.java" />
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
@@ -729,13 +681,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/js/login.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="338">
-          <caret line="13" column="39" selection-start-line="13" selection-start-column="39" selection-end-line="13" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/web/js/login.js" />
     <entry file="file://$PROJECT_DIR$/web/css/footer.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="208">
@@ -743,16 +689,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/js/register.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/controller/DeleteServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="312">
-          <caret line="23" selection-start-line="23" selection-end-line="23" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/controller/DeleteServlet.java" />
     <entry file="file://$PROJECT_DIR$/web/WEB-INF/web.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="234">
@@ -788,9 +725,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/imgs/test.svg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/css/search.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="364">
@@ -798,18 +732,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/imgs/third-slide.svg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/css/index.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="130">
           <caret line="5" column="21" selection-start-line="5" selection-start-column="21" selection-end-line="5" selection-end-column="21" />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/css/course.css">
-      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/controller/GetCourseServlet.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -828,74 +756,82 @@
     <entry file="file://$PROJECT_DIR$/web/WEB-INF/view/footer.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="234">
-          <caret line="9" column="27" lean-forward="true" selection-start-line="9" selection-start-column="27" selection-end-line="9" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/WEB-INF/view/register.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="297">
-          <caret line="55" selection-start-line="55" selection-end-line="55" selection-end-column="65" />
+          <caret line="9" column="27" selection-start-line="9" selection-start-column="27" selection-end-line="9" selection-end-column="27" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/web/WEB-INF/view/login.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="349">
+        <state relative-caret-position="1378">
           <caret line="53" column="191" selection-start-line="53" selection-start-column="191" selection-end-line="53" selection-end-column="191" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/web/WEB-INF/view/index.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="297">
+        <state relative-caret-position="2574">
           <caret line="99" column="65" selection-start-line="99" selection-start-column="65" selection-end-line="99" selection-end-column="65" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/view/account.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="546">
+          <caret line="21" column="44" selection-start-line="21" selection-start-column="44" selection-end-line="21" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/view/course.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="572">
+          <caret line="22" column="30" selection-start-line="22" selection-start-column="30" selection-end-line="22" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/controller/LoginServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="208">
+          <caret line="18" column="117" selection-start-line="18" selection-start-column="117" selection-end-line="18" selection-end-column="117" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/controller/RegisterServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="287">
+          <caret line="37" column="23" lean-forward="true" selection-start-line="37" selection-start-column="23" selection-end-line="37" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/view/search.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="26">
+          <caret line="15" column="73" selection-start-line="11" selection-start-column="4" selection-end-line="15" selection-end-column="73" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/view/register.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="299">
+          <caret line="34" column="54" lean-forward="true" selection-start-line="34" selection-start-column="54" selection-end-line="34" selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/js/register.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="130">
+          <caret line="5" column="51" selection-start-line="5" selection-start-column="51" selection-end-line="5" selection-end-column="51" />
           <folding>
-            <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="e#166#173#1" expanded="true" />
+            <element signature="e#222#229#1" expanded="true" />
+            <element signature="e#222#229#1" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/web/WEB-INF/view/header.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-171">
-          <caret line="24" column="33" lean-forward="true" selection-start-line="24" selection-start-column="33" selection-end-line="24" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/WEB-INF/view/search.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="167">
-          <caret line="15" column="73" lean-forward="true" selection-start-line="11" selection-start-column="4" selection-end-line="15" selection-end-column="73" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/WEB-INF/view/account.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="494">
-          <caret line="21" column="44" lean-forward="true" selection-start-line="21" selection-start-column="44" selection-end-line="21" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/WEB-INF/view/course.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="387">
-          <caret line="22" column="30" lean-forward="true" selection-start-line="22" selection-start-column="30" selection-end-line="22" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/controller/RegisterServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="338">
-          <caret line="38" column="13" lean-forward="true" selection-start-line="33" selection-start-column="19" selection-end-line="38" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/controller/LoginServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="297">
-          <caret line="36" column="23" lean-forward="true" selection-start-line="36" selection-start-column="23" selection-end-line="36" selection-end-column="23" />
+        <state relative-caret-position="127">
+          <caret line="18" column="88" selection-start-line="18" selection-start-column="75" selection-end-line="18" selection-end-column="88" />
         </state>
       </provider>
     </entry>

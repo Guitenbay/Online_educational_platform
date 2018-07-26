@@ -18,24 +18,24 @@
 <body>
 <%@include file="header.jsp"%>
 <div class="main container center">
-    <form class="lr-form" action="${pageContext.request.contextPath}/register" method="POST">
+    <form class="lr-form" action="${pageContext.request.contextPath}/register" method="POST" onsubmit="return checkRegister()">
         <div class="lr-title">
             <a id="to-login" href="${pageContext.request.contextPath}/login"><img src="../../imgs/arrow-left.png"></a>
             Register
         </div>
         <div class="lr-line">
             <div class="lr-label">Username</div>
-            <input class="lr-input" type="text" name="username" />
+            <input class="lr-input" type="text" id="username" name="username" />
         </div>
         <div class="lr-line">
             <div class="lr-label">Password</div>
-            <input class="lr-input" type="password" name="password" />
+            <input class="lr-input" type="password" id="password" name="password" />
         </div>
         <div class="lr-line">
             <div class="lr-label">Password Again</div>
-            <input class="lr-input" type="password" id="password" name="password again" />
+            <input class="lr-input" type="password" id="password-again" name="password again" />
         </div>
-        <div class="lr-line">
+        <div class="lr-line" id="lr-message">
             <%  Object message = request.getAttribute("message");
                 if (message != null) {%>
             <div class="alert alert-warning alert-dismissible fade show" role="alert">
@@ -56,4 +56,5 @@
 <script type="text/javascript" src="../../js/jQuery.js"></script>
 <script src="https://cdn.bootcss.com/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 <script src="https://cdn.bootcss.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<script type="text/javascript" src="../../js/register.js"></script>
 </html>

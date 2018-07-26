@@ -9,6 +9,7 @@ import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
 import java.io.IOException;
 import java.util.Date;
 
@@ -20,22 +21,21 @@ public class RegisterServlet extends HttpServlet {
 
         String username = request.getParameter("username");
         String password = request.getParameter("password");
-        String passwordAgain = request.getParameter("password again");
 
         username = (username == null) ? "" : username;
         password = (password == null) ? "" : password;
-        passwordAgain = (passwordAgain == null) ? "" : passwordAgain;
 
 
-        if (!username.equals("") && !password.equals("") && !passwordAgain.equals("")) {
+        if (!username.equals("") && !password.equals("")) {
 
-            if (!password.equals(passwordAgain)) {
-                request.setAttribute("message", "two password is not equaled");
-            } else if (userDao.getUserByName(username) != null) {
+            if (userDao.getUserByName(username) != null) {
                 request.setAttribute("message", "username has existed");
             } else {
                 userDao.save(new User(0, username, password));
                 request.setAttribute("message", "register success");
+                request.getSession().setAttribute("username", username);
+                response.sendRedirect(response.encodeRedirectURL("/"));
+                return;
             }
 
         } else {
