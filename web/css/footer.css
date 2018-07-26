@@ -1,0 +1,16 @@
+footer{
+
+    padding: 20px 50px;
+    height: 200px;
+    background-color: #eaecf0;
+    color: #999;
+}
+
+footer h2{
+    color: #899cf9;
+}
+
+p{
+    margin: 10px 0px;
+    padding: 0 10px;
+}

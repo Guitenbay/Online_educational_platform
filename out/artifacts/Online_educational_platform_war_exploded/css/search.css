@@ -1,0 +1,16 @@
+.search-block{
+    padding: 20px;
+    margin: 20px 0;
+    background-color: #fff;
+    border: solid 1px #eee;
+    border-radius: 5px;
+    box-shadow: 1px 1px 10px #bbbbbb;
+}
+
+.search-control > form{
+    margin: 0 0;
+}
+
+.search-center{
+    margin: 15px auto;
+}
