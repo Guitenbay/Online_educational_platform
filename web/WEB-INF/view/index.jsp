@@ -1,4 +1,4 @@
-<%--
+<%@ page import="config.FileConfig" %><%--
 Created by IntelliJ IDEA.
 User: 22752
 Date: 2018/7/22
@@ -6,6 +6,7 @@ Time: 14:58
 To change this template use File | Settings | File Templates.
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%@ taglib prefix="c" uri="http://java.sun.com/jstl/core_rt" %>
 <html>
 <head>
     <title>Index</title>
@@ -16,6 +17,9 @@ To change this template use File | Settings | File Templates.
     <link rel="stylesheet" type="text/css" href="../../css/index.css" />
     </head>
 <body>
+<% if(request.getAttribute("firstResult")==null){
+    request.getRequestDispatcher("/getContextForIndex.op").forward(request,response);
+}%>
     <%@include file="header.jsp"%>
     <div class="main container">
         <%--carousel--%>
@@ -25,26 +29,28 @@ To change this template use File | Settings | File Templates.
                 <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
                 <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
             </ol>
+
+
             <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <img class="d-block w-100" src="${pageContext.request.contextPath}/imgs/first-slide.svg" alt="First slide">
+                <div class="carousel-item index-height active">
+                    <img class="d-block w-100" src="${requestScope.firstResult.get(0).imagePath}" alt="First slide">
                     <div class="carousel-caption d-none d-md-block">
-                        <h5>First</h5>
-                        <p>waiting write something...</p>
+                        <h5>${requestScope.firstResult.get(0).name}</h5>
+                        <p class="line-limit-length-for-chrome">${requestScope.firstResult.get(0).description}</p>
                     </div>
                 </div>
-                <div class="carousel-item">
-                    <img class="d-block w-100" src="${pageContext.request.contextPath}/imgs/second-slide.svg" alt="Second slide">
+                <div class="carousel-item index-height">
+                    <img class="d-block w-100" src="${requestScope.firstResult.get(1).imagePath}" alt="Second slide">
                     <div class="carousel-caption d-none d-md-block">
-                        <h5>Second</h5>
-                        <p>waiting write something...</p>
+                        <h5>${requestScope.firstResult.get(1).name}</h5>
+                        <p class="line-limit-length-for-chrome">${requestScope.firstResult.get(1).description}</p>
                     </div>
                 </div>
-                <div class="carousel-item">
-                    <img class="d-block w-100" src="${pageContext.request.contextPath}/imgs/third-slide.svg" alt="Third slide">
+                <div class="carousel-item index-height">
+                    <img class="d-block w-100" src="${requestScope.firstResult.get(2).imagePath}" alt="Third slide">
                     <div class="carousel-caption d-none d-md-block">
-                        <h5>Third</h5>
-                        <p>waiting write something...</p>
+                        <h5>${requestScope.firstResult.get(2).name}</h5>
+                        <p class="line-limit-length-for-chrome">${requestScope.firstResult.get(2).description}</p>
                     </div>
                 </div>
             </div>
@@ -57,47 +63,46 @@ To change this template use File | Settings | File Templates.
                 <span class="sr-only">Next</span>
             </a>
         </div>
-        <%--carousel--%>
 
+        <%--carousel--%>
         <div class="index-block index-margin">
             <h3>Trending</h3>
             <div class="row">
-                <% for (int i=0; i < 3; i++) {%>
+                <c:forEach items="${requestScope.firstResult}" begin="0" end="2" step="1" var="i">
                 <div class="col-4">
                     <div class="card index-center" style="width: 18rem;">
-                        <img class="card-img-top" src="/imgs/test.svg" alt="Card image cap">
+                        <img class="card-img-top" src="${i.imagePath}" alt="Card image cap">
                         <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                            <h5 class="card-title">${i.name}</h5>
+                            <p class="card-text line-limit-length-for-chrome">${i.description}</p>
+                            <a href="${pageContext.request.contextPath}/course?type=info&id=${i.id}" class="btn btn-primary">Go for detail</a>
                         </div>
                     </div>
                 </div>
-                <% }%>
+                </c:forEach>
             </div>
         </div>
         <div class="index-block index-margin">
             <h3>New</h3>
             <div class="row">
-                <% for (int i=0; i < 3; i++) {%>
-                <div class="col-4">
-                    <div class="card index-center" style="width: 18rem;">
-                        <img class="card-img-top" src="/imgs/test.svg" alt="Card image cap">
-                        <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                <c:forEach items="${requestScope.firstResult}" begin="3" end="5" step="1" var="i">
+                    <div class="col-4">
+                        <div class="card index-center" style="width: 18rem;">
+                            <img class="card-img-top" src="${i.imagePath}" alt="Card image cap">
+                            <div class="card-body">
+                                <h5 class="card-title">${i.name}</h5>
+                                <p class="card-text line-limit-length-for-chrome">${i.description}</p>
+                                <a href="${pageContext.request.contextPath}/course?type=info&id=${i.id}" class="btn btn-primary">Go for detail</a>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <% }%>
+                </c:forEach>
             </div>
         </div>
-        write code continue...
     </div>
     <%@include file="footer.jsp"%>
 </body>
 <script type="text/javascript" src="../../js/jQuery.js"></script>
-<script src="https://cdn.bootcss.com/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-<script src="https://cdn.bootcss.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<script src="../../js/popper.min.js"></script>
+<script src="../../js/bootstrap.min.js"></script>
 </html>

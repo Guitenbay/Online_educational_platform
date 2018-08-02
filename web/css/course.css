@@ -1,0 +1,75 @@
+.course-block{
+    padding: 20px;
+    margin: 20px 0;
+    background-color: #fff;
+    border: solid 1px #eee;
+    border-radius: 5px;
+    box-shadow: 1px 1px 10px #bbbbbb;
+}
+
+.course-card{
+    margin: 20px 0;
+}
+
+.course-center{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.course-img{
+    width: 80%;
+    margin: 0 10%;
+}
+
+.course-context{
+    padding: 0 40px;
+}
+
+.course-video{
+    width: 90%;
+    min-width: 400px;
+    margin: 20px 5%;
+}
+
+.course-ppt{
+    min-width: 400px;
+    width: 90%;
+    margin: 20px 5%;
+    height: 600px;
+    border: none;
+}
+
+.course-float{
+    float: left;
+    margin:10px 15px;
+}
+
+.course-comment{
+    margin: 5px 20px;
+    border-bottom: solid 1px #ccc;
+}
+
+.course-comment-name{
+    position: relative;
+    right: -30px;
+}
+
+.Done{
+    font-size: 15pt;
+    color: #54cd45;
+}
+
+.Undone{
+    font-size: 15pt;
+    color: #f44653;
+}
+
+.course-score{
+    font-size: 13pt;
+    color: #4799d9;
+}
+
+.course-link{
+    display: inline-block;
+    width: 90%;
+}

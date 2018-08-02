@@ -2,10 +2,7 @@ package dao;
 
 import org.apache.commons.dbutils.QueryRunner;
 import org.apache.commons.dbutils.ResultSetHandler;
-import org.apache.commons.dbutils.handlers.BeanHandler;
-import org.apache.commons.dbutils.handlers.BeanListHandler;
-import org.apache.commons.dbutils.handlers.MapListHandler;
-import org.apache.commons.dbutils.handlers.ScalarHandler;
+import org.apache.commons.dbutils.handlers.*;
 import util.JDBCUtil;
 
 import java.lang.reflect.ParameterizedType;
@@ -66,6 +63,26 @@ public class Dao<T> {
         try {
             connection = JDBCUtil.getConnection();
             return queryRunner.query(connection, sql, new BeanListHandler<>(clazz), params);
+        } catch (SQLException e) {
+            e.printStackTrace();
+        } finally {
+            assert connection != null;
+            JDBCUtil.releaseConnection(connection);
+        }
+        return null;
+    }
+
+    /**
+     * return the map of key-value
+     * @param sql
+     * @param params
+     * @return
+     */
+    public Map<String, Object> getMap(String sql, Object... params){
+        Connection connection = null;
+        try {
+            connection = JDBCUtil.getConnection();
+            return queryRunner.query(connection, sql, new MapHandler(), params);
         } catch (SQLException e) {
             e.printStackTrace();
         } finally {

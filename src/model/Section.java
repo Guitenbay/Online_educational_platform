@@ -1,5 +1,11 @@
 package model;
 
+import config.FileConfig;
+import util.FileUtil;
+
+import java.util.ArrayList;
+import java.util.List;
+
 public class Section {
 
     private int id;
@@ -12,6 +18,32 @@ public class Section {
         this.id = id;
         this.name = name;
         this.chapterId = chapterId;
+    }
+
+    public List<String> getVideoPaths(int courseId){
+        String chapterDir = FileConfig.CHAPTER_UPLOAD_DIRECTORY + "-" + chapterId;
+        String relativePath = "/" + FileConfig.COURSE_UPLOAD_DIRECTORY
+                + "/" + courseId + "/" + chapterDir + "/" + id + "/" + FileConfig.VIDEO_UPLOAD_DIRECTORY;
+        String path = FileConfig.GLOBAL_PATH + relativePath;
+        List<String> fileNames = FileUtil.walkThroughFolder(path);
+        List<String> filePaths = new ArrayList<>();
+        for (String name : fileNames) {
+            filePaths.add("/assets" + relativePath + "/" + name);
+        }
+        return filePaths;
+    }
+
+    public List<String> getPPTPaths(int courseId){
+        String chapterDir = FileConfig.CHAPTER_UPLOAD_DIRECTORY + "-" + chapterId;
+        String relativePath = "/" + FileConfig.COURSE_UPLOAD_DIRECTORY
+                + "/" + courseId + "/" + chapterDir + "/" + id + "/" + FileConfig.PPT_UPLOAD_DIRECTORY;
+        String path = FileConfig.GLOBAL_PATH + relativePath;
+        List<String> fileNames = FileUtil.walkThroughFolder(path);
+        List<String> filePaths = new ArrayList<>();
+        for (String name : fileNames) {
+            filePaths.add("/assets" + relativePath + "/" + name);
+        }
+        return filePaths;
     }
 
     public int getId() {

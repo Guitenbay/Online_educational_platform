@@ -2,6 +2,7 @@ package controller;
 
 import dao.UserDao;
 import dao.impl.UserDaoImpl;
+import model.MD5;
 import model.User;
 
 import javax.servlet.ServletException;
@@ -17,30 +18,36 @@ public class LoginServlet extends HttpServlet {
     private UserDao userDao = new UserDaoImpl();
 
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+        request.setCharacterEncoding("utf-8");
+        response.setCharacterEncoding("utf-8");
         String username = request.getParameter("username");
         String password = request.getParameter("password");
 
         username = (username == null) ? "" : username;
         password = (password == null) ? "" : password;
+        try {
+            if (!username.equals("") && !password.equals("")) {
 
-        if (!username.equals("") && !password.equals("")) {
+                User user = userDao.getUserByName(username);
+                if (user == null) {
+                    request.setAttribute("message", "username has not existed");
+                } else if (!MD5.md5(password, "ShiAndMao").equals(user.getPassword())) {
+                    request.setAttribute("message", "password is wrong");
+                } else {
+                    HttpSession session = request.getSession();
+                    session.setAttribute("username", username);
+                    session.setAttribute("userId", userDao.getUserIdByName(username));
+                    response.sendRedirect(response.encodeRedirectURL("/"));
+                    return;
+                }
 
-            User user = userDao.getUserByName(username);
-            if (user == null) {
-                request.setAttribute("message", "username has not existed");
-            } else if (!user.getPassword().equals(password)) {
-                request.setAttribute("message", "password is wrong");
             } else {
-                HttpSession session = request.getSession();
-                session.setAttribute("username", username);
-                response.sendRedirect(response.encodeRedirectURL("/"));
-                return;
+                request.setAttribute("message", "username or password is null");
             }
-
-        } else {
-            request.setAttribute("message", "username or password is null");
+            request.getRequestDispatcher("/WEB-INF/view/login.jsp").forward(request, response);
+        }catch (Exception e){
+            e.printStackTrace();
         }
-        request.getRequestDispatcher("/WEB-INF/view/login.jsp").forward(request, response);
     }
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {

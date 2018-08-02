@@ -2,6 +2,7 @@ package controller;
 
 import dao.UserDao;
 import dao.impl.UserDaoImpl;
+import model.MD5;
 import model.User;
 
 import javax.servlet.ServletException;
@@ -18,7 +19,8 @@ public class RegisterServlet extends HttpServlet {
     private UserDao userDao = new UserDaoImpl();
 
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-
+        request.setCharacterEncoding("utf-8");
+        response.setCharacterEncoding("utf-8");
         String username = request.getParameter("username");
         String password = request.getParameter("password");
 
@@ -31,9 +33,14 @@ public class RegisterServlet extends HttpServlet {
             if (userDao.getUserByName(username) != null) {
                 request.setAttribute("message", "username has existed");
             } else {
-                userDao.save(new User(0, username, password));
+                try {
+                    userDao.save(new User(0, username, MD5.md5(password, "ShiAndMao")));
+                }catch (Exception e){
+                    e.printStackTrace();
+                }
                 request.setAttribute("message", "register success");
                 request.getSession().setAttribute("username", username);
+                request.getSession().setAttribute("userId", userDao.getUserIdByName(username));
                 response.sendRedirect(response.encodeRedirectURL("/"));
                 return;
             }

@@ -27,6 +27,13 @@ public interface UserDao {
     User getUserByName(String username);
 
     /**
+     * get userId by username
+     * @param username
+     * @return
+     */
+    int getUserIdByName(String username);
+
+    /**
      * update user
      * @param user
      */

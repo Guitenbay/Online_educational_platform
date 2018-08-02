@@ -1,5 +1,6 @@
 package dao;
 
+import model.Answer;
 import model.Homework;
 
 import java.util.List;
@@ -9,7 +10,6 @@ public interface HomeworkDao {
     List<Homework> getHomeworkListByCourseId(int courseId);
 
     Homework getHomeworkById(int id);
-
     void save(Homework homework);
 
     void update(Homework homework);

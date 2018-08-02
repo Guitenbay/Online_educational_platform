@@ -21,7 +21,7 @@
     <form class="lr-form" action="${pageContext.request.contextPath}/login" method="POST">
         <div class="lr-title">
             Login
-            <a id="to-register" href="${pageContext.request.contextPath}/register"><img src="../../imgs/arrow-right.png"></a>
+            <a id="to-register" href="${pageContext.request.contextPath}/register"><img src="../../img/arrow-right.png"></a>
         </div>
         <div class="lr-line">
             <div class="lr-label">Username</div>
@@ -34,7 +34,7 @@
         <div class="lr-line">
             <%  Object message = request.getAttribute("message");
                 if (message != null) {%>
-            <div class="alert alert-warning alert-dismissible fade show" role="alert">
+            <div class="alert alert-warning alert-dismissible fade show lr-center" role="alert">
                 <%= message %>
                 <button type="button" class="close" data-dismiss="alert" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
@@ -50,6 +50,6 @@
 <%@include file="footer.jsp"%>
 </body>
 <script type="text/javascript" src="../../js/jQuery.js"></script>
-<script src="https://cdn.bootcss.com/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-<script src="https://cdn.bootcss.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<script src="../../js/popper.min.js"></script>
+<script src="../../js/bootstrap.min.js"></script>
 </html>

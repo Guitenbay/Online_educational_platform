@@ -11,4 +11,10 @@ public interface SelectedDao {
 
     List<Map<String, Object>> getSelectedListByUserId(int userId);
 
+    Map<String, Object> getSelectedByUserIdAndCourseId(int userId, int courseId);
+
+    void save(int userId, int courseId);
+
+    void delete(int userId, int courseId);
+
 }

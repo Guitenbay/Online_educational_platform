@@ -20,25 +20,39 @@
 <div class="main container center">
     <form class="lr-form" action="${pageContext.request.contextPath}/register" method="POST" onsubmit="return checkRegister()">
         <div class="lr-title">
-            <a id="to-login" href="${pageContext.request.contextPath}/login"><img src="../../imgs/arrow-left.png"></a>
+            <a id="to-login" href="${pageContext.request.contextPath}/login"><img src="../../img/arrow-left.png"></a>
             Register
         </div>
         <div class="lr-line">
             <div class="lr-label">Username</div>
-            <input class="lr-input" type="text" id="username" name="username" />
+            <input class="lr-input" type="text" required id="username" name="username" />
         </div>
         <div class="lr-line">
             <div class="lr-label">Password</div>
-            <input class="lr-input" type="password" id="password" name="password" />
+            <input class="lr-input" type="password" required id="password" name="password" />
         </div>
         <div class="lr-line">
             <div class="lr-label">Password Again</div>
-            <input class="lr-input" type="password" id="password-again" name="password again" />
+            <input class="lr-input" type="password" required id="password-again" name="password again" />
         </div>
+
+        <div class="lr-line">
+            <div class="lr-label">Your Email</div>
+        </div>
+        <div class="lr-line-long row">
+            <input class="lr-input-lg col-8" type="email" required id="email" name="email" />
+            <button type="button" class="btn btn-info register-email col-4" id="send-button" onclick="doCode()">Send Email</button>
+        </div>
+
+        <div class="lr-line">
+            <div class="lr-label">Identifying Code</div>
+            <input class="lr-input" type="text" required id="code" name="code" placeholder="Input the identifying code you have received" />
+        </div>
+
         <div class="lr-line" id="lr-message">
             <%  Object message = request.getAttribute("message");
                 if (message != null) {%>
-            <div class="alert alert-warning alert-dismissible fade show" role="alert">
+            <div class="alert alert-warning alert-dismissible fade show lr-center" role="alert">
                 <%= message %>
                 <button type="button" class="close" data-dismiss="alert" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
@@ -54,7 +68,7 @@
 <%@include file="footer.jsp"%>
 </body>
 <script type="text/javascript" src="../../js/jQuery.js"></script>
-<script src="https://cdn.bootcss.com/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-<script src="https://cdn.bootcss.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<script src="../../js/popper.min.js"></script>
+<script src="../../js/bootstrap.min.js"></script>
 <script type="text/javascript" src="../../js/register.js"></script>
 </html>
