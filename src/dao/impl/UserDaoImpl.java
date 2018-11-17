@@ -26,6 +26,12 @@ public class UserDaoImpl extends Dao<User> implements UserDao {
     }
 
     @Override
+    public int getUserIdByName(String username) {
+        String sql = "SELECT id FROM users WHERE username=?";
+        return getForValue(sql, username);
+    }
+
+    @Override
     public void update(User user) {
         String sql = "UPDATE users SET username=?, password=? WHERE id=?";
         update(sql, user.getUsername(), user.getPassword(), user.getId());

@@ -15,6 +15,9 @@ public class JDBCUtil {
     }
 
     public static Connection getConnection() throws SQLException {
+//        try {
+//            Connection connection=dataSource.getConnection();
+//        }
         return dataSource.getConnection();
     }
 

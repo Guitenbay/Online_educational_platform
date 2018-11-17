@@ -1,8 +1,9 @@
 package model;
 
+import java.io.Serializable;
 import java.util.Date;
 
-public class Homework {
+public class Homework implements Serializable {
 
     private int id;
     private String name;

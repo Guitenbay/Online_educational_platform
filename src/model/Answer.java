@@ -2,18 +2,18 @@ package model;
 
 import java.util.Date;
 
-public class Answer {
+public class Answer  {
 
     private int id;
     private String Context;
-    private int score;
+    private Integer score;
     private Date updateTime;
     private int userId;
     private int homeworkId;
 
     public Answer(){}
 
-    public Answer(int id, String context, int score, Date updateTime, int userId, int homeworkId) {
+    public Answer(int id, String context, Integer score, Date updateTime, int userId, int homeworkId) {
         this.id = id;
         Context = context;
         this.score = score;
@@ -21,6 +21,7 @@ public class Answer {
         this.userId = userId;
         this.homeworkId = homeworkId;
     }
+
 
     public int getId() {
         return id;
@@ -38,11 +39,11 @@ public class Answer {
         Context = context;
     }
 
-    public int getScore() {
+    public Integer getScore() {
         return score;
     }
 
-    public void setScore(int score) {
+    public void setScore(Integer score) {
         this.score = score;
     }
 
@@ -69,4 +70,5 @@ public class Answer {
     public void setHomeworkId(int homeworkId) {
         this.homeworkId = homeworkId;
     }
+
 }

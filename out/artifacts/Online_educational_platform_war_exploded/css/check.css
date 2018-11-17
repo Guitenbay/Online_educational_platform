@@ -1,0 +1,30 @@
+span{
+
+}
+
+.check-block{
+    padding: 20px;
+    margin: 20px 10px;
+    background-color: #fff;
+    border: solid 1px #eee;
+    border-radius: 5px;
+    box-shadow: 1px 1px 10px #bbbbbb;
+}
+
+.check-answer-font{
+    font-size: 15pt;
+    color: #444;
+}
+
+.check-info-font{
+    font-size: 16pt;
+}
+
+.check-score{
+    color: #f3260c;
+    font-size: 20pt;
+}
+
+.check-card{
+    margin: 10px auto;
+}

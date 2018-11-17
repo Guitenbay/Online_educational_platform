@@ -1,0 +1,86 @@
+.account-bg{
+    width: 100%;
+    height: 400px;
+    background-size: cover;
+    background: url("../img/account-bg.jpg") 100% 30%;
+}
+
+.account-mask{
+    width: inherit;
+    height: inherit;
+    background-color: rgba(137,156,249,.12);
+}
+
+.account-relative{
+    position: relative;
+    top: -300px;
+}
+
+.account-block{
+    padding: 20px;
+    margin: 20px 0;
+    background-color: #fff;
+    border: solid 1px #eee;
+    border-radius: 5px;
+    box-shadow: 1px 1px 10px #bbbbbb;
+}
+
+.account-name{
+    font-size: 15pt;
+    font-weight: bold;
+}
+
+.account-none{
+    display: inline-block;
+    color: transparent;
+    width: 0;
+    height: 0;
+    font-size: 0;
+}
+
+.account-row-center{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.account-float{
+    float: left;
+    margin:10px 15px;
+}
+
+.account-add{
+    margin: 10px 15px;
+}
+
+.account-link{
+    border: none;
+    background-color: transparent;
+    color: #333333;
+}
+
+.account-link:hover{
+    text-decoration: underline;
+}
+
+.Done{
+    font-size: 15pt;
+    color: #54cd45;
+}
+
+.Undone{
+    font-size: 15pt;
+    color: #f44653;
+}
+
+.account-score{
+    font-size: 13pt;
+    color: #4799d9;
+}
+
+
+/**
+ * fileinput .file-drop-zone
+ */
+.file-drop-zone{
+    height: unset;
+}

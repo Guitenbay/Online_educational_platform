@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <c3p0-config>
     <default-config>
+        <property name="allowPublicKeyRetrieval">true</property>
         <property name="automaticTestTable">con_test</property>
         <property name="checkoutTimeout">30000</property>
         <property name="idleConnectionTestPeriod">30</property>
@@ -24,7 +25,7 @@
         <property name="user">online-course</property>
         <property name="password">1234567</property>
         <property name="driverClass">com.mysql.cj.jdbc.Driver</property>
-        <property name="jdbcUrl">jdbc:mysql://localhost:3306/online-course?useSSL=false&amp;serverTimezone=GMT&amp;useUnicode=true&amp;characterEncoding=utf-8</property>
+        <property name="jdbcUrl">jdbc:mysql://localhost:3306/online-course?useSSL=false&amp;serverTimezone=GMT&amp;allowPublicKeyRetrieval=true&amp;characterEncoding=utf-8</property>
 
         <property name="acquireIncrement">3</property>
         <property name="initialPoolSize">10</property>

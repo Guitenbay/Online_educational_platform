@@ -1,9 +1,8 @@
 package dao;
 
 import org.apache.commons.dbutils.QueryRunner;
-import org.apache.commons.dbutils.handlers.BeanHandler;
-import org.apache.commons.dbutils.handlers.BeanListHandler;
-import org.apache.commons.dbutils.handlers.ScalarHandler;
+import org.apache.commons.dbutils.ResultSetHandler;
+import org.apache.commons.dbutils.handlers.*;
 import util.JDBCUtil;
 
 import java.lang.reflect.ParameterizedType;
@@ -11,6 +10,7 @@ import java.lang.reflect.Type;
 import java.sql.Connection;
 import java.sql.SQLException;
 import java.util.List;
+import java.util.Map;
 
 public class Dao<T> {
 
@@ -63,6 +63,46 @@ public class Dao<T> {
         try {
             connection = JDBCUtil.getConnection();
             return queryRunner.query(connection, sql, new BeanListHandler<>(clazz), params);
+        } catch (SQLException e) {
+            e.printStackTrace();
+        } finally {
+            assert connection != null;
+            JDBCUtil.releaseConnection(connection);
+        }
+        return null;
+    }
+
+    /**
+     * return the map of key-value
+     * @param sql
+     * @param params
+     * @return
+     */
+    public Map<String, Object> getMap(String sql, Object... params){
+        Connection connection = null;
+        try {
+            connection = JDBCUtil.getConnection();
+            return queryRunner.query(connection, sql, new MapHandler(), params);
+        } catch (SQLException e) {
+            e.printStackTrace();
+        } finally {
+            assert connection != null;
+            JDBCUtil.releaseConnection(connection);
+        }
+        return null;
+    }
+
+    /**
+     * return a list of key-value
+     * @param sql
+     * @param params
+     * @return
+     */
+    public List<Map<String, Object>> getMapForList(String sql, Object... params){
+        Connection connection = null;
+        try {
+            connection = JDBCUtil.getConnection();
+            return queryRunner.query(connection, sql, new MapListHandler(), params);
         } catch (SQLException e) {
             e.printStackTrace();
         } finally {
